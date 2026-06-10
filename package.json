@@ -1,0 +1,54 @@
+{
+  "name": "ai-model-tuner",
+  "version": "1.0.0",
+  "description": "Desktop tool to recommend inference settings for AI models on Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --win dir",
+    "dist": "electron-builder --win"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "systeminformation": "^5.22.12",
+    "electron-log": "^4.4.8"
+  },
+  "build": {
+    "appId": "com.heinebraeck.ai-model-tuner",
+    "productName": "AI Model Tuner",
+    "copyright": "Copyright © 2025",
+    "directories": {
+      "output": "dist/dist2"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        },
+        {
+          "target": "portable",
+          "arch": "x64"
+        }
+      ],
+      "icon": "logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,tests,testing,powered-test,example,examples}",
+      "!**/node_modules/*.json",
+      "!**/node_modules/*.txt"
+    ]
+  }
+}
