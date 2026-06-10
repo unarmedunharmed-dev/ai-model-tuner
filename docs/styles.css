@@ -771,6 +771,34 @@ a {
     flex-wrap: wrap;
 }
 
+.github-stars {
+    margin-top: 1.5rem;
+}
+
+.github-stars a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.08);
+    color: var(--color-white);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: background var(--transition), transform var(--transition);
+}
+
+.github-stars a:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-1px);
+}
+
+.star-icon {
+    color: #f59e0b;
+    font-size: 1.1rem;
+}
+
 .download-note {
     margin-top: 1.5rem;
     font-size: 0.85rem;
