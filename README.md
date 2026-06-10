@@ -23,7 +23,7 @@ So I built this tool. It does the hard work for you.
 
 ## Download
 
-- **Free version** — [Download portable EXE](https://github.com/unarmedunharmed-dev/ai-model-tuner/releases/download/v1.0.0/AI.Model.Tuner.PRO.1.0.0.exe)
+- **Free version** — [Download portable EXE](https://github.com/unarmedunharmed-dev/ai-model-tuner/releases/download/v1.0.0/AI.Model.Tuner.1.0.0.exe)
 - **Pro version ($20)** — [Buy via PayPal](https://paypal.me/Unarmed/pro)
 
 ## Requirements
