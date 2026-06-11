@@ -42,15 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.faq-question').forEach(function (button) {
         button.addEventListener('click', function () {
             var isExpanded = this.getAttribute('aria-expanded') === 'true';
+            var item = this.closest('.faq-item');
             // Close all
             document.querySelectorAll('.faq-question').forEach(function (b) {
                 b.setAttribute('aria-expanded', 'false');
-                b.nextElementSibling.classList.remove('open');
+                b.closest('.faq-item').querySelector('.faq-answer').classList.remove('open');
             });
             // Open current if it was closed
             if (!isExpanded) {
                 this.setAttribute('aria-expanded', 'true');
-                this.nextElementSibling.classList.add('open');
+                item.querySelector('.faq-answer').classList.add('open');
             }
         });
     });
